@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GameOfLife</title>
+    <link rel="stylesheet" href="gameoflife.css">
+  </head>
+  <body>
+    <h1>Game of Life</h1>
+    
+    <p>
+    	<button id="start">Start Game of Life</button>
+    	<button id="stop">Stop</button>
+    	<button id="step">One Step</button>
+    	<button id="new">Generate Random World</button>
+    	<button id="new_empty">Generate Empty World</button>    	
+    </p>
+    
+    <svg id="svg_world" xmlns="http://www.w3.org/2000/svg"
+		version="1.1" baseProfile="full"
+		width="1000" height="600">	 		
+	</svg>
+    
+    <p id="status">
+    	Ready
+    </p>
+
+    <script type="application/dart" src="gameoflife.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
